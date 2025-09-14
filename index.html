@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/plumpy/24/alarm.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Timer</title>
+
+</head>
+
+<body>
+    <main>
+        <h1>Temporizador</h1>
+
+        <div class="contenedor-input">
+            <label>Horas: <input type="number" id="horas" min="0" value="0" /></label><br>
+            <label>Minutos: <input type="number" id="minutos" min="0" max="59" value="0" /></label><br>
+            <label>Segundos: <input type="number" id="segundos" min="0" max="59" value="0" /></label><br>
+            <button id="iniciar">Iniciar</button>
+            <button id="detener" style="display: none;">Detener Alarma</button>
+        </div>
+
+
+        <h2 id="display">00:00:00</h2>
+
+        <audio id="alarma" src="buzzer.mp3" preload="auto"></audio>
+
+        <script src="script.js"></script>
+
+    </main>
+</body>
+
+</html>
